@@ -1,0 +1,294 @@
+/* Hero Section */
+.hero {
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    background: var(--accent-color);
+    color: var(--white-color);
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: darken(var(--accent-color), 10%);
+}
+
+/* Benefits Section */
+.benefits {
+    padding: 60px 20px;
+    background: var(--white-color);
+}
+
+.benefits h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.benefit-card {
+    background: var(--light-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+.benefit-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.benefit-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.benefit-card p {
+    font-size: 1.1em;
+    color: var(--dark-color);
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 60px 20px;
+    background: var(--light-color);
+}
+
+.how-it-works h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.step {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.step img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.step h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.step p {
+    font-size: 1.1em;
+    color: var(--dark-color);
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 20px;
+    background: var(--white-color);
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.testimonial {
+    background: var(--light-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-size: 1.1em;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.testimonial span {
+    display: block;
+    text-align: right;
+    font-size: 1em;
+    color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .hero .btn {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .benefits h2,
+    .how-it-works h2,
+    .testimonials h2 {
+        font-size: 2em;
+    }
+
+    .benefit-card h3,
+    .step h3,
+    .testimonial span {
+        font-size: 1.5em;
+    }
+
+    .benefit-card p,
+    .step p,
+    .testimonial p {
+        font-size: 1em;
+    }
+}
+
+/* Colors */
+:root {
+    --primary-color: #2c3e50;   /* Dark Blue */
+    --secondary-color: #34495e; /* Medium Blue */
+    --accent-color: #e74c3c;    /* Red */
+    --light-color: #ecf0f1;     /* Light Gray */
+    --dark-color: #2d2d2d;      /* Dark Gray */
+    --white-color: #ffffff;     /* White */
+}
+
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    margin: 0;
+    padding: 0;
+    background: var(--light-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* Header */
+.header {
+    background: var(--primary-color);
+    padding: 20px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.8em;
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation li {
+    margin-left: 20px;
+}
+
+.navigation a {
+    font-size: 1em;
+    color: var(--white-color);
+    padding: 5px 10px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navigation a:hover {
+    background: var(--accent-color);
+    color: var(--white-color);
+    border-radius: 4px;
+}
+
+/* Footer */
+.footer {
+    background: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Main Content */
+.main {
+    padding: 40px 20px;
+    background: var(--white-color);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: var(--white-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container, .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navigation li {
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
